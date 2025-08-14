@@ -1,5 +1,5 @@
 /*
-           ========== عام ==========
+           ====== General Styles ======
         */
 body {
   font-family: "Arial", sans-serif;
@@ -8,7 +8,7 @@ body {
 }
 
 /*
-           ========== قسم الهيدر ==========
+           ====== Header Section ======
         */
 .header-section {
   background: #f8f9fa;
@@ -16,7 +16,7 @@ body {
 }
 
 /*
-           ========== قسم المنتورز ==========
+           ====== Mentors Section ======
         */
 .mentors-section {
   background: #f8f9fa;
@@ -24,7 +24,7 @@ body {
 }
 
 /*
-           ========== كارد المنتور ==========
+           ====== Mentor Card ======
         */
 .mentor-card {
   background: white;
@@ -40,11 +40,11 @@ body {
 }
 
 /*
-           ========== صورة المنتور ==========
+           ====== Mentor Image ======
         */
 .mentor-image {
-  width: 5rem;
-  height: 5rem;
+  width: 8.6rem;
+  height: 8.6rem;
 }
 
 .mentor-image img {
@@ -54,7 +54,7 @@ body {
 }
 
 /*
-           ========== اسم المنتور ==========
+           ====== Mentor Name ======
         */
 .mentor-name {
   color: #2563eb;
@@ -65,7 +65,7 @@ body {
 }
 
 /*
-           ========== منصب المنتور ==========
+           ====== Mentor Title ======
         */
 .mentor-title {
   color: #666;
@@ -80,7 +80,7 @@ hr {
 }
 
 /*
-           ========== وصف المنتور ==========
+           ====== Mentor Description ======
         */
 .mentor-work {
   color: #444;
@@ -89,11 +89,11 @@ hr {
 }
 
 /*
-           ========== كود QR ==========
+           ====== QR Code ======
         */
 .qr-code {
-  width: 5rem;
-  height: 5rem;
+  width: 8.6rem;
+  height: 8.6rem;
   border: 2px solid #e5e7eb;
   border-radius: 8px;
   flex-shrink: 0;
@@ -111,57 +111,62 @@ hr {
 }
 
 /*
-           ========== للموبايل ==========
+           ====== Mobile Responsive ======
         */
 @media (max-width: 768px) {
   .mentor-card {
-    padding: 1rem;
-    margin-bottom: 20px;
+    padding: 0.75rem;
+    margin-bottom: 15px;
   }
 
   .mobile-row {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 0.5rem;
-    padding: 0.5rem;
+    width: 100%;
   }
 
   .mentor-image {
-    width: 5rem;
-    height: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
     flex-shrink: 0;
   }
 
   .mentor-content {
     flex: 1;
-    text-align: start;
+    min-width: 0;
     padding: 0 0.5rem;
+    overflow: hidden;
   }
 
   .mentor-name {
-    font-size: .9rem;
+    font-size: 0.85rem;
     margin-bottom: 0.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .mentor-title {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 
   .mentor-work {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     margin-top: 0.2rem;
   }
 
   hr {
     width: 30%;
-    margin: 0.3rem 0;
+    margin: 0.2rem 0;
+    opacity: 0.5;
   }
 
   .qr-code {
-    width: 5rem;
-    height: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
     margin: 0;
     flex-shrink: 0;
   }
@@ -175,6 +180,7 @@ hr {
   }
 
   h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    margin: 0.75rem 0;
   }
 }
