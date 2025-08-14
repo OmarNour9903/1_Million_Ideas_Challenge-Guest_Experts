@@ -15,6 +15,10 @@ body {
   padding: 20px 0;
 }
 
+.guest{
+  padding: 0 4rem;
+}
+
 /*
            ====== Mentors Section ======
         */
@@ -112,6 +116,11 @@ hr {
            ====== Mobile Responsive ======
         */
 @media (max-width: 768px) {
+
+  .guest{
+    padding: 0.75rem;
+  }
+
   .mentor-card {
     padding: 0.75rem;
     margin-bottom: 15px;
